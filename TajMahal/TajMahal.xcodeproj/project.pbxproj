@@ -14,6 +14,9 @@
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
 		42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
+		AC5823252B8CE4B100102581 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC5823242B8CE4B100102581 /* PlusJakartaSans-Bold.ttf */; };
+		AC5823272B8CE51800102581 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC5823262B8CE51800102581 /* PlusJakartaSans-Regular.ttf */; };
+		AC5823292B8CF13E00102581 /* WelcomeComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5823282B8CF13E00102581 /* WelcomeComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		AC5823242B8CE4B100102581 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Bold.ttf"; path = "Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		AC5823262B8CE51800102581 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Regular.ttf"; path = "Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		AC5823282B8CF13E00102581 /* WelcomeComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,13 @@
 		42E9DCAC2AF11136007CE7D0 /* TajMahal */ = {
 			isa = PBXGroup;
 			children = (
+				AC5823222B8CB05C00102581 /* Fonts */,
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
+				AC58232A2B8D088100102581 /* Model */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
 				42E9DCB32AF11138007CE7D0 /* Preview Content */,
-				428D2B502AFA851900BBA4F5 /* Model.swift */,
-				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
 			);
 			path = TajMahal;
 			sourceTree = "<group>";
@@ -80,10 +86,29 @@
 		42E9DCBB2AF113D1007CE7D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC5823282B8CF13E00102581 /* WelcomeComponents.swift */,
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AC5823222B8CB05C00102581 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC5823242B8CE4B100102581 /* PlusJakartaSans-Bold.ttf */,
+				AC5823262B8CE51800102581 /* PlusJakartaSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AC58232A2B8D088100102581 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				428D2B502AFA851900BBA4F5 /* Model.swift */,
+				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
+				AC5823252B8CE4B100102581 /* PlusJakartaSans-Bold.ttf in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
+				AC5823272B8CE51800102581 /* PlusJakartaSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +187,7 @@
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
+				AC5823292B8CF13E00102581 /* WelcomeComponents.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = 9L643QCQAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -307,7 +335,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amandinecousin.TajMahal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leplard.fr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = 9L643QCQAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -336,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amandinecousin.TajMahal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leplard.fr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
