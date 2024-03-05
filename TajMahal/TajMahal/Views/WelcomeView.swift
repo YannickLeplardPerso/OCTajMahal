@@ -14,6 +14,9 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             Image("TajMahal")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.horizontal, 20)
             
             Spacer()
             
@@ -82,6 +85,7 @@ struct WelcomeView: View {
             .background(.customRed)
             .cornerRadius(8.0)
             .padding(.horizontal, 20)
+            .padding(.bottom, 10)
         }
     }
 }

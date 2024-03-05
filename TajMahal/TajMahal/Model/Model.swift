@@ -15,7 +15,9 @@ enum SpiceLevel {
 }
 
 // Représente l'objet "plat", qui figure sur la carte du menu
-struct Dish {
+// l'uuid permet d'être conforme au protocole Identifiable, et deonc de parcourir une liste de plats
+struct Dish: Identifiable {
+    let id = UUID()
     var name: String
     var description: String
     var allergens: String
