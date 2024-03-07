@@ -13,19 +13,19 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         NavigationStack {
+            // Image de présentation
             Image("TajMahal")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding(.horizontal, 20)
             
             Spacer()
-            
+            // Nom et logo du restaurant
             HStack {
                 VStack(alignment: .leading) {
                     TajText(text: "Restaurant Indien")
                     TajTitleText(text: "Taj Mahal")
                 }
-                .padding(.vertical, 4)
                 
                 Spacer()
                 
@@ -37,43 +37,47 @@ struct WelcomeView: View {
                     .foregroundColor(.tajLogo)
                     
             }
-            .padding(.vertical, 10)
             .padding(.horizontal, 20)
             
             Spacer()
-            
+            // Informations
             VStack(alignment: .leading) {
-                TajInformation(icon: "clock", title: "Mardi",  information: "11h30 - 14h30 . 18h30 - 22h00")
-                    
-                TajInformation(icon: "fork.knife", title: "Type de Service",  information: "À emporter")
+                // horaires
+                TajInformationRow(icon: "clock", title: "Mardi",  information: "11h30 - 14h30 . 18h30 - 22h00")
+                // type de service
+                TajInformationRow(icon: "fork.knife", title: "Type de Service",  information: "À emporter")
                 
-                TajTextButton(action: {
-                    // action
-//                    if let url = URL(string: "http://maps.apple.com/?q=2 Cour de l’Ile Louviers, 75004 Paris") {
-//                        UIApplication.shared.open(url)
-//                    }
+                // adresse
+                TajInformationLinkRow(action: {
+/* === pour ouvrir l'adresse [ADRESSE] dans "Plans"
+                    if let url = URL(string: "http://maps.apple.com/?q=2 ADRESSE") {
+                        UIApplication.shared.open(url)
+                    }
+ */
                 }, title: "12 avenue de la Brique - 75010 Paris", icon: "mappin.and.ellipse")
-                
-                TajTextButton(action: {
-                    // action
-//                    if let url = URL(string: "https://openclassrooms.com/fr/") {
-//                        UIApplication.shared.open(url)
-//                    }
+                // lien vers un site web [HTTPS://SITEWEB]
+                TajInformationLinkRow(action: {
+/* === pour aller sur le site web du restaurant avec Safari
+                    if let url = URL(string: "HTTPS://SITEWEB") {
+                        UIApplication.shared.open(url)
+                    }
+ */
                 }, title: "www.tajmahal.fr", icon: "globe")
-                
-                TajTextButton(action: {
-                    // action
-//                    if let url = URL(string: "tel:0684731985") {
-//                        UIApplication.shared.open(url)
-//                    }
+                // téléphone
+                TajInformationLinkRow(action: {
+/* === pour appeler le restaurant au numéro [XXXXXXXX]
+                    if let url = URL(string: "tel:XXXXXXXX") {
+                        UIApplication.shared.open(url)
+                    }
+ */
                 }, title: "06 12 34 56 78", icon: "phone")
             }
             .padding(.horizontal, 20)
-            
+
             Spacer()
-            
+            // pour lancer la view du menu
             NavigationLink {
-                MenuView()
+             MenuView()
             } label : {
                 Text("Accéder au menu")
                     .foregroundColor(.white)
@@ -85,8 +89,9 @@ struct WelcomeView: View {
             .background(.customRed)
             .cornerRadius(8.0)
             .padding(.horizontal, 20)
-            .padding(.bottom, 10)
         }
+        //.padding(.horizontal, 20)
+        .padding(.bottom, 4)
     }
 }
 

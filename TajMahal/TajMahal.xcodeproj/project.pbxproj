@@ -14,10 +14,18 @@
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
 		42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
-		AC5823292B8CF13E00102581 /* TajComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5823282B8CF13E00102581 /* TajComponents.swift */; };
+		AC3912E02B99B4D400487E97 /* TajTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912DF2B99B4D400487E97 /* TajTitleText.swift */; };
+		AC3912E22B99B52300487E97 /* TajLargeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912E12B99B52300487E97 /* TajLargeText.swift */; };
+		AC3912E42B99B58800487E97 /* TajText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912E32B99B58800487E97 /* TajText.swift */; };
+		AC3912E62B99B5C400487E97 /* TajEuroPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912E52B99B5C400487E97 /* TajEuroPrice.swift */; };
+		AC3912E82B99B78900487E97 /* TajInformationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912E72B99B78900487E97 /* TajInformationRow.swift */; };
+		AC3912EA2B99C38200487E97 /* TajInformationLinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912E92B99C38200487E97 /* TajInformationLinkRow.swift */; };
+		AC3912EC2B99C56100487E97 /* TajPepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912EB2B99C56100487E97 /* TajPepper.swift */; };
+		AC3912EE2B99C5D600487E97 /* TajSpiceLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912ED2B99C5D600487E97 /* TajSpiceLevel.swift */; };
+		AC3912F02B99C80700487E97 /* TajDishSubList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912EF2B99C80700487E97 /* TajDishSubList.swift */; };
+		AC3912F22B99CC4100487E97 /* TajDishRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912F12B99CC4100487E97 /* TajDishRow.swift */; };
 		AC8133052B8F8C7600C5396B /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC8133042B8F8C7600C5396B /* PlusJakartaSans-Bold.ttf */; };
 		AC8133072B8F8C8300C5396B /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC8133062B8F8C8300C5396B /* PlusJakartaSans-Regular.ttf */; };
-		ACE475012B8E148F00B52761 /* MenuDishRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE475002B8E148F00B52761 /* MenuDishRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +38,18 @@
 		42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		AC5823282B8CF13E00102581 /* TajComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajComponents.swift; sourceTree = "<group>"; };
+		AC3912DF2B99B4D400487E97 /* TajTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajTitleText.swift; sourceTree = "<group>"; };
+		AC3912E12B99B52300487E97 /* TajLargeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajLargeText.swift; sourceTree = "<group>"; };
+		AC3912E32B99B58800487E97 /* TajText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajText.swift; sourceTree = "<group>"; };
+		AC3912E52B99B5C400487E97 /* TajEuroPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajEuroPrice.swift; sourceTree = "<group>"; };
+		AC3912E72B99B78900487E97 /* TajInformationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajInformationRow.swift; sourceTree = "<group>"; };
+		AC3912E92B99C38200487E97 /* TajInformationLinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajInformationLinkRow.swift; sourceTree = "<group>"; };
+		AC3912EB2B99C56100487E97 /* TajPepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajPepper.swift; sourceTree = "<group>"; };
+		AC3912ED2B99C5D600487E97 /* TajSpiceLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajSpiceLevel.swift; sourceTree = "<group>"; };
+		AC3912EF2B99C80700487E97 /* TajDishSubList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajDishSubList.swift; sourceTree = "<group>"; };
+		AC3912F12B99CC4100487E97 /* TajDishRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajDishRow.swift; sourceTree = "<group>"; };
 		AC8133042B8F8C7600C5396B /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Bold.ttf"; path = "divers/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		AC8133062B8F8C8300C5396B /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Regular.ttf"; path = "divers/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf"; sourceTree = SOURCE_ROOT; };
-		ACE475002B8E148F00B52761 /* MenuDishRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDishRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,7 @@
 				AC5823222B8CB05C00102581 /* Fonts */,
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
 				AC58232A2B8D088100102581 /* Model */,
+				AC3912DE2B99B49800487E97 /* Components */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
@@ -88,12 +105,27 @@
 		42E9DCBB2AF113D1007CE7D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AC5823282B8CF13E00102581 /* TajComponents.swift */,
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
-				ACE475002B8E148F00B52761 /* MenuDishRow.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AC3912DE2B99B49800487E97 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AC3912DF2B99B4D400487E97 /* TajTitleText.swift */,
+				AC3912E12B99B52300487E97 /* TajLargeText.swift */,
+				AC3912E32B99B58800487E97 /* TajText.swift */,
+				AC3912E52B99B5C400487E97 /* TajEuroPrice.swift */,
+				AC3912E72B99B78900487E97 /* TajInformationRow.swift */,
+				AC3912E92B99C38200487E97 /* TajInformationLinkRow.swift */,
+				AC3912EB2B99C56100487E97 /* TajPepper.swift */,
+				AC3912ED2B99C5D600487E97 /* TajSpiceLevel.swift */,
+				AC3912F12B99CC4100487E97 /* TajDishRow.swift */,
+				AC3912EF2B99C80700487E97 /* TajDishSubList.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		AC5823222B8CB05C00102581 /* Fonts */ = {
@@ -187,12 +219,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
+				AC3912E82B99B78900487E97 /* TajInformationRow.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
-				ACE475012B8E148F00B52761 /* MenuDishRow.swift in Sources */,
+				AC3912EE2B99C5D600487E97 /* TajSpiceLevel.swift in Sources */,
+				AC3912E62B99B5C400487E97 /* TajEuroPrice.swift in Sources */,
+				AC3912E42B99B58800487E97 /* TajText.swift in Sources */,
+				AC3912E02B99B4D400487E97 /* TajTitleText.swift in Sources */,
+				AC3912EA2B99C38200487E97 /* TajInformationLinkRow.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
+				AC3912F22B99CC4100487E97 /* TajDishRow.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
-				AC5823292B8CF13E00102581 /* TajComponents.swift in Sources */,
+				AC3912F02B99C80700487E97 /* TajDishSubList.swift in Sources */,
+				AC3912EC2B99C56100487E97 /* TajPepper.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
+				AC3912E22B99B52300487E97 /* TajLargeText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

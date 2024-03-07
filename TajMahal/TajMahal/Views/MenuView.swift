@@ -13,29 +13,14 @@ struct MenuView: View {
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
+        
         TajTitleText(text: "Menu")
-        
-        //VStack(alignment: .leading) {
+                      
+        List {
+            TajDishSubList(dishType: "Entrées", dishesList: viewModel.apetizerArray)
             
-            //TajLargeText(text: "Entrées")
-        GroupBox(label: TajLargeText(text: "Entrées")) {
-            
-            List(viewModel.apetizerArray) { dish in
-                MenuDishRow(dish: dish)
-                    //.padding(.vertical)
-            }
+            TajDishSubList(dishType: "Plats principaux", dishesList: viewModel.mainCourseArray)
         }
-        
-        GroupBox(label: TajLargeText(text: "Plats Principaux")) {
-            
-            List(viewModel.mainCourseArray) { dish in
-                MenuDishRow(dish: dish)
-                    //.padding(.vertical)
-            }
-        }
-        //}
-        //.ignoresSafeArea()
-        
     }
 }
 
