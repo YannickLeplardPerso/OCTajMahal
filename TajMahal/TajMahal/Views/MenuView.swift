@@ -13,13 +13,46 @@ struct MenuView: View {
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
-        
-        TajTitleText(text: "Menu")
-                      
-        List {
-            TajDishSubList(dishType: "Entrées", dishesList: viewModel.apetizerArray)
-            
-            TajDishSubList(dishType: "Plats principaux", dishesList: viewModel.mainCourseArray)
+        NavigationStack {
+            TajTitleText(text: "Menu")
+                          
+            List {
+//                TajDishSubList(dishType: "Entrées", dishesList: viewModel.apetizerArray)
+//                
+//                TajDishSubList(dishType: "Plats principaux", dishesList: viewModel.mainCourseArray)
+                
+                Section(header: TajLargeText(text: "Entrées"))
+                {
+                    ForEach(viewModel.apetizerArray) { dish in
+                        NavigationLink(destination: DishView(dish: dish), label: {
+                            TajDishRow(dish: dish)
+                        })
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                    .background(RoundedRectangle(cornerRadius: 8).fill(.tajBackground))
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets(top: 6, leading: 0, bottom: 6, trailing: 0))
+                }
+                .textCase(nil)
+                .listRowInsets(EdgeInsets())
+                
+                Section(header: TajLargeText(text: "Plats"))
+                {
+                    ForEach(viewModel.mainCourseArray) { dish in
+                        NavigationLink(destination: DishView(dish: dish), label: {
+                            TajDishRow(dish: dish)
+                        })
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                    .background(RoundedRectangle(cornerRadius: 8).fill(.tajBackground))
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets(top: 6, leading: 0, bottom: 6, trailing: 0))
+                }
+                .textCase(nil)
+                .listRowInsets(EdgeInsets())
+            }
         }
     }
 }

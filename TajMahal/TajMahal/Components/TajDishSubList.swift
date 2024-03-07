@@ -13,17 +13,23 @@ struct TajDishSubList: View {
     let dishesList: [Dish]
     
     var body: some View {
-        Section(header: TajLargeText(text: dishType))
-        {
-            ForEach(dishesList) { dish in TajDishRow(dish: dish)
+        NavigationStack {
+            Section(header: TajLargeText(text: dishType))
+            {
+                ForEach(dishesList) { dish in
+                    NavigationLink(destination: DishView(dish: dish), label: {
+                        TajDishRow(dish: dish)
+                    })
+                    .buttonStyle(PlainButtonStyle())
+                }
+                .background(RoundedRectangle(cornerRadius: 8).fill(.white))
+                .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden)
+                .listRowInsets(EdgeInsets(top: 6, leading: 0, bottom: 6, trailing: 0))
             }
-            .background(RoundedRectangle(cornerRadius: 8).fill(.white))
-            .listRowBackground(Color.clear)
-            .listRowSeparator(.hidden)
-            .listRowInsets(EdgeInsets(top: 6, leading: 0, bottom: 6, trailing: 0))
+            .textCase(nil)
+            .listRowInsets(EdgeInsets())
         }
-        .textCase(nil)
-        .listRowInsets(EdgeInsets())
     }
 }
 

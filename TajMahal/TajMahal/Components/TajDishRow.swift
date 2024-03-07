@@ -14,6 +14,7 @@ struct TajDishRow: View {
         HStack {
             Image(dish.imageName)
                 .resizable()
+                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                 .frame(width: 112, height: 86)
                 .cornerRadius(10.0)
                 .padding(.trailing)
@@ -35,9 +36,12 @@ struct TajDishRow: View {
             }
         }
         .padding(20)
+        .background(.tajBackground)
+        .cornerRadius(10.0)
+        
     }
 }
 
 #Preview {
-    TajDishRow(dish: ViewModel().apetizerArray[0])
+    TajDishRow(dish: ViewModel().mainCourseArray[0])
 }

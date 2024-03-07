@@ -92,6 +92,7 @@ struct WelcomeView: View {
         }
         //.padding(.horizontal, 20)
         .padding(.bottom, 4)
+        .accentColor(.primary)
     }
 }
 
