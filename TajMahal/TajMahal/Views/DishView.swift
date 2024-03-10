@@ -28,8 +28,15 @@ struct DishView: View {
                 .padding(.top, 12)
                 .padding(.trailing, 12)
         }
-        .padding(.horizontal, 20)
-        .padding(.bottom, 40)
+        .padding(20)
+        // === barre de navigation
+        .navigationBarTitleDisplayMode(.inline)
+        // titre de la page en cours
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                TajTitleText(text: dish.name)
+            }
+        }
                 
         VStack(alignment: .leading) {
             TajTextBold(text: "Allergènes : ")
@@ -41,7 +48,7 @@ struct DishView: View {
         
         Divider()
             .padding(.horizontal, 20)
-            .padding(.vertical, 4)
+            .padding(.vertical, 8)
             
         VStack(alignment: .leading) {
             TajTextBold(text: "Ingrédients :")

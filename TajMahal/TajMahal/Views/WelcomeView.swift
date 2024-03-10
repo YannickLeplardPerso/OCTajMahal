@@ -89,8 +89,17 @@ struct WelcomeView: View {
             .background(.customRed)
             .cornerRadius(8.0)
             .padding(.horizontal, 20)
+            // === barre de navigation
+            .navigationBarTitleDisplayMode(.inline)
+            // titre du backup button (sur la page suivante)
+            .navigationTitle("   ")
+            // titre de la page en cours
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("")
+                }
+            }
         }
-        //.padding(.horizontal, 20)
         .padding(.bottom, 4)
         .accentColor(.primary)
     }

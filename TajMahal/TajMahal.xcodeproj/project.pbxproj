@@ -25,8 +25,6 @@
 		AC3912EC2B99C56100487E97 /* TajPepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912EB2B99C56100487E97 /* TajPepper.swift */; };
 		AC3912EE2B99C5D600487E97 /* TajSpiceLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912ED2B99C5D600487E97 /* TajSpiceLevel.swift */; };
 		AC3912F22B99CC4100487E97 /* TajDishRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3912F12B99CC4100487E97 /* TajDishRow.swift */; };
-		AC8133052B8F8C7600C5396B /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC8133042B8F8C7600C5396B /* PlusJakartaSans-Bold.ttf */; };
-		AC8133072B8F8C8300C5396B /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC8133062B8F8C8300C5396B /* PlusJakartaSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +48,8 @@
 		AC3912EB2B99C56100487E97 /* TajPepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajPepper.swift; sourceTree = "<group>"; };
 		AC3912ED2B99C5D600487E97 /* TajSpiceLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajSpiceLevel.swift; sourceTree = "<group>"; };
 		AC3912F12B99CC4100487E97 /* TajDishRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajDishRow.swift; sourceTree = "<group>"; };
-		AC8133042B8F8C7600C5396B /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Bold.ttf"; path = "divers/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
-		AC8133062B8F8C8300C5396B /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Regular.ttf"; path = "divers/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		AC49CFEF2B9DE2D800C0FC72 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Regular.ttf"; path = "divers/polices/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		AC49CFF02B9DE2F500C0FC72 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Bold.ttf"; path = "divers/polices/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +132,8 @@
 		AC5823222B8CB05C00102581 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AC8133062B8F8C8300C5396B /* PlusJakartaSans-Regular.ttf */,
-				AC8133042B8F8C7600C5396B /* PlusJakartaSans-Bold.ttf */,
+				AC49CFEF2B9DE2D800C0FC72 /* PlusJakartaSans-Regular.ttf */,
+				AC49CFF02B9DE2F500C0FC72 /* PlusJakartaSans-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -208,8 +206,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
-				AC8133072B8F8C8300C5396B /* PlusJakartaSans-Regular.ttf in Resources */,
-				AC8133052B8F8C7600C5396B /* PlusJakartaSans-Bold.ttf in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,7 +14,7 @@ struct MenuView: View {
     
     var body: some View {
         NavigationStack {
-            TajTitleText(text: "Menu")
+            //TajTitleText(text: "Menu")
                           
             List {
 //                TajDishSubList(dishType: "Entrées", dishesList: viewModel.apetizerArray)
@@ -44,6 +44,16 @@ struct MenuView: View {
                             TajDishRow(dish: dish)
                         })
                         .buttonStyle(PlainButtonStyle())
+                        // === barre de navigation
+                        .navigationBarTitleDisplayMode(.inline)
+                        // titre du backup button (sur la page suivante)
+                        .navigationTitle("   ")
+                        // titre de la page en cours
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                TajTitleText(text: "Menu")
+                            }
+                        }
                     }
                     .background(RoundedRectangle(cornerRadius: 8).fill(.tajBackground))
                     .listRowBackground(Color.clear)
